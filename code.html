@@ -3,97 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralph Lauren Shirts - For the Modern Man</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;500&display=swap');
-        body{font-family:'Roboto',sans-serif;margin:0;padding:0;background:linear-gradient(135deg,#000 0%,#DC143C 50%,#f5f5dc 100%);color:#333;overflow-x:hidden;position:relative}body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="%23ffd700" opacity="0.1"/><circle cx="20" cy="30" r="0.5" fill="%23DC143C" opacity="0.2"/><circle cx="80" cy="70" r="0.8" fill="%23ffd700" opacity="0.15"/></svg>') repeat;z-index:-1;animation:particles 30s infinite linear}body.dark-mode{background:linear-gradient(135deg,#222 0%,#000 100%);color:#ddd}.hero{background:linear-gradient(135deg,rgba(0,0,0,0.9) 0%,rgba(220,20,60,0.9) 100%);color:#fff;text-align:center;padding:80px 20px;position:relative;backdrop-filter:blur(10px);border-radius:0 0 50px 50px;animation:headerGlow 5s infinite alternate}.hero h1{font-family:'Playfair Display',serif;font-size:4em;margin:0;text-shadow:3px 3px 6px rgba(0,0,0,0.7);animation:typewriter 3s steps(20) 1s both}.hero p{font-style:italic;margin:20px 0 0;font-size:1.2em;opacity:0;animation:fadeIn 2s 2s both}.hero .cta-buttons{margin-top:30px}.hero button{background:#DC143C;color:#fff;border:none;padding:15px 30px;border-radius:25px;font-size:1.1em;cursor:pointer;margin:0 10px;transition:all 0.3s;animation:heartbeat 2s infinite}.hero button:hover{background:#b01030;transform:scale(1.1);box-shadow:0 0 20px rgba(220,20,60,0.7)}.nav{display:flex;justify-content:center;background:rgba(255,255,255,0.1);padding:15px;border-radius:25px;margin:20px auto;max-width:600px}.nav button{background:none;border:none;color:#fff;font-size:1.1em;margin:0 20px;padding:10px 20px;border-radius:20px;cursor:pointer;transition:all 0.3s;animation:pulse 2s infinite}.nav button:hover,.nav button.active{background:#ffd700;color:#000;transform:scale(1.1);box-shadow:0 0 15px rgba(255,215,0,0.5)}.settings-btn{position:fixed;top:20px;right:20px;background:#ffd700;color:#000;border:none;border-radius:50%;width:60px;height:60px;font-size:1.5em;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,0.3);z-index:1000;animation:bounce 3s infinite}.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:2000;justify-content:center;align-items:center;animation:modalFade 0.3s}.modal-content{background:#fff;padding:30px;border-radius:15px;max-width:400px;width:90%;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.5);animation:slideUp 0.5s}.checkout-modal .modal-content{max-width:500px}.checkout-modal input,.checkout-modal select{margin:10px 0;width:100%;padding:10px;border:1px solid #ccc;border-radius:5px}.checkout-modal button{margin:10px 5px}.container{max-width:1200px;margin:0 auto;padding:20px}.shirt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}.shirt-item{background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,0.1);overflow:hidden;transition:all 0.5s;transform-style:preserve-3d;will-change:transform;opacity:0;animation:fadeInUp 1s both;animation-delay:calc(var(--i) * 0.2s);position:relative}.shirt-item:hover{transform:perspective(1000px) rotateY(10deg) translateY(-15px) scale(1.05);box-shadow:0 15px 40px rgba(0,0,0,0.2);border:2px solid #DC143C;animation:drape 1s ease-in-out}.shirt-item img{width:100%;height:280px;object-fit:cover;transition:transform 0.5s}.shirt-item:hover img{transform:scale(1.1)}.shirt-info{padding:20px;text-align:center}.shirt-info h3{margin:0 0 15px;font-weight:700;font-size:1.4em}.urgency{position:absolute;top:10px;left:10px;background:#DC143C;color:#fff;padding:5px 10px;border-radius:10px;font-size:0.8em;animation:seductiveGlow 2s infinite}.rating{display:flex;justify-content:center;margin:10px 0}.rating span{color:#ffd700}.pair-with{margin:10px 0;font-size:0.9em;color:#666}.options{margin:15px 0}.options select{margin:0 5px;padding:8px;border:1px solid #ccc;border-radius:10px;background:#f9f9f9}.price{font-weight:700;color:#000;font-size:1.3em;margin:10px 0}body.dark-mode .price{color:#ffd700}.buy-btn{background:#DC143C;color:#fff;border:none;padding:10px 20px;border-radius:25px;cursor:pointer;font-weight:700;margin-top:10px;transition:all 0.3s;animation:heartbeat 2s infinite}.buy-btn:hover{background:#b01030;transform:scale(1.1);box-shadow:0 0 20px rgba(220,20,60,0.7)}.wishlist-btn{position:absolute;top:10px;right:10px;background:#DC143C;color:#fff;border:none;border-radius:50%;width:40px;height:40px;font-size:1.2em;cursor:pointer;animation:heartPulse 2s infinite}.wishlist-btn:hover{background:#b01030;transform:scale(1.2)}.mens-essentials{background:rgba(255,255,255,0.8);padding:40px;text-align:center;margin:40px 0;border-radius:20px;animation:slideInLeft 1s}.mens-essentials h2{margin-top:0}.mens-essentials ul{list-style:none;padding:0}.mens-essentials li{margin:10px 0}.newsletter{background:#000;color:#fff;padding:30px;text-align:center;margin:40px 0;border-radius:20px}.newsletter h2{margin-top:0}.newsletter input{padding:10px;width:250px;border:none;border-radius:5px;margin-right:10px}.newsletter button{background:#DC143C;color:#fff;border:none;padding:10px 20px;border-radius:5px;cursor:pointer}.footer{background:linear-gradient(135deg,#000 0%,#DC143C 100%);color:#fff;text-align:center;padding:20px;margin-top:40px;border-radius:50px 50px 0 0}.footer-icons{display:flex;justify-content:center;margin:10px 0}.footer-icons a{color:#fff;margin:0 15px;font-size:1.5em;text-decoration:none;transition:color 0.3s}.footer-icons a:hover{color:#ffd700}@keyframes typewriter{from{width:0}to{width:100%}}@keyframes fadeIn{to{opacity:1}}@keyframes particles{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}@keyframes headerGlow{0%{box-shadow:0 0 20px rgba(255,215,0,0.3)}100%{box-shadow:0 0 40px rgba(220,20,60,0.6)}}@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}@keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-10px)}60%{transform:translateY(-5px)}}@keyframes modalFade{0%{opacity:0}100%{opacity:1}}@keyframes slideUp{from{transform:translateY(50px);opacity:0}to{transform:translateY(0);opacity:1}}@keyframes fadeInUp{from{opacity:0;transform:translateY(50px)}to{opacity:1;transform:translateY(0)}}@keyframes slideInLeft{from{transform:translateX(-100px);opacity:0}to{transform:translateX(0);opacity:1}}@keyframes drape{0%{transform:perspective(1000px) rotateY(0deg)}50%{transform:perspective(1000px) rotateY(5deg) scale(1.02)}100%{transform:perspective(1000px) rotateY(10deg) scale(1.05)}}@keyframes seductiveGlow{0%{box-shadow:0 0 5px rgba(220,20,60,0.5)}50%{box-shadow:0 0 15px rgba(220,20,60,0.8)}100%{box-shadow:0 0 5px rgba(220,20,60,0.5)}}@keyframes heartbeat{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}@keyframes heartPulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
-    </style>
+    <title>My First HTML Page</title>
+    <!-- You can link CSS files here -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <button class="settings-btn" onclick="openModal()">⚙</button>
-    <div class="modal" id="settingsModal">
-        <div class="modal-content">
-            <h2>Customize Your Seductive Experience</h2>
-            <label>Primary Color: <input type="color" id="primaryColor" value="#DC143C"></label>
-            <label>Font Size: <input type="range" id="fontSize" min="12" max="24" value="16"> <span id="fontSizeValue">16px</span></label>
-            <label><input type="checkbox" id="enable3D" checked> Enable Seductive 3D Animations</label>
-            <button onclick="applySettings()">Indulge</button>
-            <button onclick="closeModal()">Close</button>
-        </div>
-    </div>
-    <div class="modal checkout-modal" id="checkoutModal">
-        <div class="modal-content">
-            <h2>Complete Your Purchase</h2>
-            <p id="checkoutItem">Item: Loading...</p>
-            <label>Quantity: <select id="quantity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
-            <label>Special Notes: <input type="text" id="notes" placeholder="e.g., Gift wrap"></label>
-            <p>Total: $<span id="totalPrice">0.00</span></p>
-            <button onclick="completePurchase()">Complete Purchase</button>
-            <button onclick="closeCheckoutModal()">Cancel</button>
-        </div>
-    </div>
-    <div class="hero">
-        <h1>Ralph Lauren Shirts</h1>
-        <p>For the Modern Man: Timeless elegance that commands attention.</p>
-        <div class="cta-buttons">
-            <button onclick="document.getElementById('shirtGrid').scrollIntoView()">Shop Seductively</button>
-            <button onclick="alert('Take our Style Quiz for personalized recommendations!')">Style Quiz</button>
-        </div>
-    </div>
-    <div class="nav">
-        <button class="active" onclick="filterCategory('all')">All</button>
-        <button onclick="filterCategory('polos')">Polos</button>
-        <button onclick="filterCategory('button-downs')">Button-Downs</button>
-        <button onclick="filterCategory('casual')">Casual</button>
-    </div>
-    
-    <div class="container">
-        <div class="shirt-grid" id="shirtGrid">
-            <!-- Polos (7 items) -->
-            <div class="shirt-item polos" style="--i:1">
-                <div class="urgency">Men's Favorite!</div>
-                <button class="wishlist-btn" onclick="alert('Added to your desires!')">♥</button>
-                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=320&h=280&fit=crop" alt="Classic Polo Shirt" loading="lazy">
-                <div class="shirt-info">
-                    <h3>Oxford Polo</h3>
-                    <div class="rating">★★★★★</div>
-                    <p>A staple in any wardrobe. Soft cotton blend with a tailored fit.</p>
-                    <div class="pair-with">Pair with: Navy tie and cufflinks for boardroom allure.</div>
-                    <div class="options">
-                        <select><option>Size: S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
-                        <select><option>Color: Navy</option><option>White</option><option>Blue</option></select>
-                    </div>
-                    <p class="price">$89.50</p>
-                    <button class="buy-btn" onclick="openCheckout('Oxford Polo', 89.50)">Buy Now</button>
-                </div>
-            </div>
-            <div class="shirt-item polos" style="--i:2">
-                <div class="urgency">Only 3 left—act now!</div>
-                <button class="wishlist-btn" onclick="alert('Added to your desires!')">♥</button>
-                <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=320&h=280&fit=crop" alt="Striped Polo" loading="lazy">
-                <div class="shirt-info">
-                    <h3>Striped Polo</h3>
-                    <div class="rating">★★★★★</div>
-                    <p>Iconic stripes in navy and white. Lightweight and breathable.</p>
-                    <div class="pair-with">Pair with: Casual chinos and a leather belt for weekend charm.</div>
-                    <div class="options">
-                        <select><option>Size: S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
-                        <select><option>Color: Navy</option><option>White</option><option>Blue</option></select>
-                    </div>
-                    <p class="price">$95.00</p>
-                    <button class="buy-btn" onclick="openCheckout('Striped Polo', 95.00)">Buy Now</button>
-                </div>
-            </div>
-            <div class="shirt-item polos" style="--i:3">
-                <button class="wishlist-btn" onclick="alert('Added to your desires!')">♥</button>
-                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=320&h=280&fit=crop" alt="White Polo" loading="lazy">
-                <div class="shirt-info">
-                    <h3>White Polo</h3>
-                    <div class="rating">★★★★☆</div>
-                    <p>Timeless white polo with a slim fit.</p>
-                    <div class="pair-with">Pair with: Dark jeans and a watch for effortless style.</div>
-                    <div class="options">
-                        <select><option>Size: S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
-                        <select><option>Color: Navy</option><option>White</option><option>Blue</option></select>
-                    </div>
-                    <p class="price
+
+    <header>
+        <h1>Welcome to My Website!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About This Page</h2>
+            <p>This is a simple HTML structure to get you started. You can add more content, styles, and interactivity here.</p>
+            <p>HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser.</p>
+        </section>
+
+        <article>
+            <h3>A Small Article</h3>
+            <p>Here's a paragraph within an article element. Articles are typically independent pieces of content that could be distributed separately.</p>
+            <button>Click Me</button>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <!-- You can link JavaScript files here, often just before the closing </body> tag -->
+        <!-- <script src="script.js"></script> -->
+    </footer>
+
+</body>
+</html>
+```
+
+**Explanation of the elements:**
+
+*   `<!DOCTYPE html>`: Declares that this is an HTML5 document.
+*   `<html lang="en">`: The root element of an HTML page. `lang="en"` specifies the document's language for better accessibility and SEO.
+*   `<head>`: Contains meta-information about the HTML document (not displayed on the page itself).
+    *   `<meta charset="UTF-8">`: Specifies the character encoding for the document, ensuring proper display of various characters.
+    *   `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Configures the viewport for responsive design, making the page look good on different devices.
+    *   `<title>My First HTML Page</title>`: Sets the title that appears in the browser tab or window title bar.
+    *   `<!-- ... -->`: HTML comments. They are ignored by the browser.
+    *   `<link rel="stylesheet" href="style.css">`: (Commented out) Used to link an external CSS stylesheet.
+*   `<body>`: Contains all the visible content of the HTML page.
+    *   `<header>`: Represents introductory content, often containing navigation and headings.
+        *   `<h1>`: A top-level heading.
+        *   `<nav>`: Contains navigation links.
+        *   `<ul>` and `<li>`: Unordered list and list items for navigation links.
+        *   `<a href="#">`: An anchor tag creating a hyperlink. `#` is a placeholder.
+    *   `<main>`: Represents the dominant content of the `<body>`.
+        *   `<section>`: A thematic grouping of content, often with a heading.
+            *   `<h2>`: A second-level heading.
+            *   `<p>`: A paragraph of text.
+        *   `<article>`: Represents an independent, self-contained piece of content.
+            *   `<h3>`: A third-level heading.
+            *   `<button>`: A clickable button.
+    *   `<footer>`: Represents a footer for its nearest sectioning content or for the root object.
+        *   `<p>`: A paragraph for copyright info.
+        *   `<script src="script.js"></script>`: (Commented out) Used to link an external
