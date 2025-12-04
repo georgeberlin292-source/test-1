@@ -3,70 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
-    <!-- You can link CSS files here -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Stellar Kicks - Step Up Your Style</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <header>
-        <h1>Welcome to My Website!</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Stellar Kicks</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#shop" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="nav-icon cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+                </div>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>About This Page</h2>
-            <p>This is a simple HTML structure to get you started. You can add more content, styles, and interactivity here.</p>
-            <p>HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser.</p>
+        <section class="hero-section">
+            <div class="hero-content container">
+                <h1 class="hero-title animate-in fade-in-up delay-1">Stride with Confidence</h1>
+                <p class="hero-subtitle animate-in fade-in-up delay-2">Discover the perfect pair that defines your journey. Innovation meets style.</p>
+                <a href="#shop" class="btn btn-primary animate-in fade-in-up delay-3">Shop New Arrivals</a>
+            </div>
+            <div class="hero-background-overlay"></div>
+            <!-- Background image will be set via CSS -->
         </section>
 
-        <article>
-            <h3>A Small Article</h3>
-            <p>Here's a paragraph within an article element. Articles are typically independent pieces of content that could be distributed separately.</p>
-            <button>Click Me</button>
-        </article>
+        <section id="featured" class="featured-products section-spacing">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in-up">Our Latest Kicks</h2>
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card animate-on-scroll fade-in">
+                        <div class="product-image-wrapper">
+                            <img src="img/shoe-1.png" alt="Stylish Athletic Shoe" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">VaporMax Flyknit</h3>
+                            <p class="product-category">Running Shoes</p>
+                            <span class="product-price">$180.00</span>
+                            <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card animate-on-scroll fade-in delay-1">
+                        <div class="product-image-wrapper">
+                            <img src="img/shoe-2.png" alt="Classic Leather Sneaker" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Urban Explorer</h3>
+                            <p class="product-category">Casual Sneakers</p>
+                            <span class="product-price">$120.00</span>
+                            <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card animate-on-scroll fade-in delay-2">
+                        <div class="product-image-wrapper">
+                            <img src="img/shoe-3.png" alt="High-Top Fashion Sneaker" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Aero Glide Pro</h3>
+                            <p class="product-category">Lifestyle Sneakers</p>
+                            <span class="product-price">$150.00</span>
+                            <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card animate-on-scroll fade-in delay-3">
+                        <div class="product-image-wrapper">
+                            <img src="img/shoe-4.png" alt="Hiking Trail Boots" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Apex Trailblazer</h3>
+                            <p class="product-category">Outdoor Boots</p>
+                            <span class="product-price">$210.00</span>
+                            <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                        </div>
+                    </article>
+                    <!-- Add more products as needed -->
+                </div>
+                <div class="text-center animate-on-scroll fade-in-up">
+                    <a href="#shop" class="btn btn-primary mt-4">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="categories-section section-spacing bg-light">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in-up">Shop by Category</h2>
+                <div class="categories-grid">
+                    <a href="#" class="category-card animate-on-scroll fade-in">
+                        <img src="https://via.placeholder.com/600x400/FF5733/FFFFFF?text=Running" alt="Running Shoes" class="category-image">
+                        <div class="category-info">
+                            <h3>Running</h3>
+                            <p>Lightweight performance</p>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card animate-on-scroll fade-in delay-1">
+                        <img src="https://via.placeholder.com/600x400/33A0FF/FFFFFF?text=Casual" alt="Casual Shoes" class="category-image">
+                        <div class="category-info">
+                            <h3>Casual</h3>
+                            <p>Everyday comfort</p>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card animate-on-scroll fade-in delay-2">
+                        <img src="https://via.placeholder.com/600x400/33FF57/FFFFFF?text=Basketball" alt="Basketball Shoes" class="category-image">
+                        <div class="category-info">
+                            <h3>Basketball</h3>
+                            <p>Dominate the court</p>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card animate-on-scroll fade-in delay-3">
+                        <img src="https://via.placeholder.com/600x400/FF33E0/FFFFFF?text=Lifestyle" alt="Lifestyle Shoes" class="category-image">
+                        <div class="category-info">
+                            <h3>Lifestyle</h3>
+                            <p>Street style redefined</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner parallax-effect section-spacing" style="background-image: url('img/cta-banner-bg.jpg');">
+            <div class="container text-center">
+                <h2 class="section-title animate-on-scroll fade-in-up">Don't Miss Out!</h2>
+                <p class="animate-on-scroll fade-in-up delay-1">Sign up for our newsletter and get 15% off your first order.</p>
+                <button class="btn btn-primary btn-lg animate-on-scroll fade-in-up delay-2">Subscribe Now</button>
+            </div>
+        </section>
+
+        <section id="about" class="about-us section-spacing">
+            <div class="container grid-2-columns">
+                <div class="about-content animate-on-scroll fade-in-left">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>At Stellar Kicks, we believe that shoes are more than just footwear – they're a statement, an extension of your personality, and a tool for your journey. Founded with a passion for exceptional design and unparalleled comfort, we curate a collection that empowers you to step confidently into every moment.</p>
+                    <p>From the cutting-edge performance of our running shoes to the timeless elegance of our casual wear, every pair is selected for its quality, innovation, and style. We're committed to providing you with not just shoes, but an experience that elevates your stride.</p>
+                    <a href="#contact" class="btn btn-secondary mt-3">Learn More</a>
+                </div>
+                <div class="about-image animate-on-scroll fade-in-right">
+                    <img src="https://via.placeholder.com/800x600/555/FFF?text=Our+Story" alt="About Us" class="img-responsive">
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
-        <!-- You can link JavaScript files here, often just before the closing </body> tag -->
-        <!-- <script src="script.js"></script> -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col logo-col">
+                <a href="#" class="logo">Stellar Kicks</a>
+                <p>Step Up Your Style.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Men's Shoes</a></li>
+                    <li><a href="#">Women's Shoes</a></li>
+                    <li><a href="#">Kids' Shoes</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Stellar Kicks. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
-```
-
-**Explanation of the elements:**
-
-*   `<!DOCTYPE html>`: Declares that this is an HTML5 document.
-*   `<html lang="en">`: The root element of an HTML page. `lang="en"` specifies the document's language for better accessibility and SEO.
-*   `<head>`: Contains meta-information about the HTML document (not displayed on the page itself).
-    *   `<meta charset="UTF-8">`: Specifies the character encoding for the document, ensuring proper display of various characters.
-    *   `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Configures the viewport for responsive design, making the page look good on different devices.
-    *   `<title>My First HTML Page</title>`: Sets the title that appears in the browser tab or window title bar.
-    *   `<!-- ... -->`: HTML comments. They are ignored by the browser.
-    *   `<link rel="stylesheet" href="style.css">`: (Commented out) Used to link an external CSS stylesheet.
-*   `<body>`: Contains all the visible content of the HTML page.
-    *   `<header>`: Represents introductory content, often containing navigation and headings.
-        *   `<h1>`: A top-level heading.
-        *   `<nav>`: Contains navigation links.
-        *   `<ul>` and `<li>`: Unordered list and list items for navigation links.
-        *   `<a href="#">`: An anchor tag creating a hyperlink. `#` is a placeholder.
-    *   `<main>`: Represents the dominant content of the `<body>`.
-        *   `<section>`: A thematic grouping of content, often with a heading.
-            *   `<h2>`: A second-level heading.
-            *   `<p>`: A paragraph of text.
-        *   `<article>`: Represents an independent, self-contained piece of content.
-            *   `<h3>`: A third-level heading.
-            *   `<button>`: A clickable button.
-    *   `<footer>`: Represents a footer for its nearest sectioning content or for the root object.
-        *   `<p>`: A paragraph for copyright info.
-        *   `<script src="script.js"></script>`: (Commented out) Used to link an external
